@@ -6,7 +6,7 @@ namespace CgisloE
     {
         static void Main(string[] args)
         {
-            
+            Console.WriteLine(Math.E.ToString("F1"));
         }
     }
 }
