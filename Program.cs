@@ -16,10 +16,10 @@ namespace Chislo
             string c = Console.ReadLine();
 
             string temp = b;
-            string tempa = a;
-            b = c;
-            a = temp;
-            c = tempa;
+            string tempc = c;
+            b = a;
+            a = tempc;
+            c = temp;
 
             Console.WriteLine($"Число (А) = {a}, Число (B) = {b}, Число (C) = {c} ");
         }
