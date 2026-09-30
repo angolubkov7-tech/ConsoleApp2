@@ -6,14 +6,9 @@ namespace Chislo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Сколько секунд прошло с начало суток");
-            int second = Convert.ToInt32(Console.ReadLine());
+            int num = 543 / 130;
 
-            int hour = second / 3600;
-            int minute = (second%3600) / 60;
-            int second2 = second%60;
-
-            Console.WriteLine($"От начала суток прошло {hour} часов, от последнего часа прошло {minute} минут, от последний минуты прошло {second2} сеекунд ");
+            Console.WriteLine($"От прямоугольника со сторонами 543 x 130 мм можно отрезать {num} квадрата");
         }
     }
 }
