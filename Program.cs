@@ -1,13 +1,23 @@
 ﻿using System;
 
-class Program
+namespace chisla
 {
-    static void Main()
+    class Medvedev
     {
-        Console.WriteLine("Мир Труд Май");
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите число (А): ");
+            int chisloA = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine();
+            Console.WriteLine("Введите число (B): ");
+            int chislob = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine("Мир\n\tТруд\n\t\tМай");
+            int temp = chisloA;
+            chisloA = chislob;
+            chislob = temp;
+
+
+            Console.WriteLine($"Число (А) = {chisloA}, Число (B) = {chislob}");
+        }
     }
 }
