@@ -1,12 +1,13 @@
 ﻿using System;
 
-namespace CgisloE
+namespace Vod
 {
-    class Medevedev
+    class Medvedev
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Math.E.ToString("F1"));
+            Console.WriteLine("50");
+            Console.WriteLine("10");
         }
     }
 }
