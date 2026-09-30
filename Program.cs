@@ -6,22 +6,14 @@ namespace Chislo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите число (А); ");
-            string a = Console.ReadLine();
+            Console.WriteLine("Сколько секунд прошло с начало суток");
+            int second = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Введите число (B); ");
-            string b = Console.ReadLine();
+            int hour = second / 3600;
+            int minute = (second%3600) / 60;
+            int second2 = second%60;
 
-            Console.WriteLine("Введите число (C); ");
-            string c = Console.ReadLine();
-
-            string temp = b;
-            string tempc = c;
-            b = a;
-            a = tempc;
-            c = temp;
-
-            Console.WriteLine($"Число (А) = {a}, Число (B) = {b}, Число (C) = {c} ");
+            Console.WriteLine($"От начала суток прошло {hour} часов, от последнего часа прошло {minute} минут, от последний минуты прошло {second2} сеекунд ");
         }
     }
 }
