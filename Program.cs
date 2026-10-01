@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace Chislo
 {
@@ -6,21 +7,25 @@ namespace Chislo
     {
         static void Main(string[] args)
         {
-            Console.Write("Введите имя человека: ");
-            string nameA = Console.ReadLine();
+          string hello = Console.ReadLine();
 
+            Console.WriteLine("Как тебя зовут?");
+
+            string name = Console.ReadLine();
+            Console.WriteLine($"Привет, {name}");
             
-            Console.WriteLine(nameA);
+            string room = Console.ReadLine();
+            Console.WriteLine("Да");
 
+            string tell = Console.ReadLine();
+            Console.WriteLine("Нет");
 
-            Console.WriteLine();
+            Thread.Sleep(5000);
 
+            Console.WriteLine("Но могу показать");
 
-           
-            Console.Write("Введите имя человека для приветствия: ");
-            string nameB = Console.ReadLine();
-            Console.WriteLine($"Привет, {nameB}!");
-
+            var rnd = new Random();
+            Console.ForegroundColor = (ConsoleColor)rnd.Next(0, 16);
         }
     }
 }
