@@ -6,9 +6,15 @@ namespace Chislo
     {
         static void Main(string[] args)
         {
-            int num = 543 / 130;
+            Console.WriteLine("Введите число больше 999");
 
-            Console.WriteLine($"От прямоугольника со сторонами 543 x 130 мм можно отрезать {num} квадрата");
+            int num = Convert.ToInt32(Console.ReadLine());
+
+            int num1 = (num / 100) % 10;
+            int num3 = num / 1000;
+
+            Console.WriteLine($"Число сотен в числе {num} равно {num1} , число тысяч рвно {num3}");
+
         }
     }
 }
