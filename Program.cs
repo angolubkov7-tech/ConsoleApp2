@@ -6,14 +6,20 @@ namespace Chislo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите число больше 999");
+            Console.Write("Введите имя человека: ");
+            string nameA = Console.ReadLine();
 
-            int num = Convert.ToInt32(Console.ReadLine());
+            
+            Console.WriteLine(nameA);
 
-            int num1 = (num / 100) % 10;
-            int num3 = num / 1000;
 
-            Console.WriteLine($"Число сотен в числе {num} равно {num1} , число тысяч рвно {num3}");
+            Console.WriteLine();
+
+
+           
+            Console.Write("Введите имя человека для приветствия: ");
+            string nameB = Console.ReadLine();
+            Console.WriteLine($"Привет, {nameB}!");
 
         }
     }
