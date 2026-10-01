@@ -22,10 +22,10 @@ namespace Chislo
 
             Thread.Sleep(5000);
 
-            Console.WriteLine("Но могу показать");
-
             var rnd = new Random();
-            Console.ForegroundColor = (ConsoleColor)rnd.Next(0, 16);
+            Console.ForegroundColor = (ConsoleColor)rnd.Next(1, 16);
+
+            Console.WriteLine("Но могу показать");
         }
     }
 }
