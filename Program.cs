@@ -6,9 +6,19 @@ namespace institut
 {
     class Program
     {
-        enum University { КАИ, КГУ, КХТИ }
+        enum University
+        { 
+            КАИ,
+            КХТИ,
+            КГУ
+        }
 
-        enum name { Роман, Сергей, Олег }
+        enum name
+        {
+            Роман, 
+            Сергей, 
+            Олег 
+        }
 
         struct UniversityName
         {
