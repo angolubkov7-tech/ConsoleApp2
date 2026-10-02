@@ -15,6 +15,7 @@ namespace institut
             public name Tipe;
         }
 
+        UniversityName now = new UniversityName();
 
 
 
