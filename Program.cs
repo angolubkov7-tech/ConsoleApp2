@@ -30,10 +30,10 @@ namespace institut
         {
 
             UniversityName now1 = new UniversityName();
-            now1.Type = University.КАИ;
             UniversityName now2 = new UniversityName();
-            now2.Type = University.КХТИ;
             UniversityName now3 = new UniversityName();
+            now1.Type = University.КАИ;
+            now2.Type = University.КХТИ;
             now3.Type = University.КГУ;
 
             UniversityName name1 = new UniversityName();
@@ -43,9 +43,9 @@ namespace institut
             name2.Tipe = name.Сергей;
             name1.Tipe = name.Олег;
 
-            Console.WriteLine($"{name3.Tipe} , {now3}");
-            Console.WriteLine($"{name2.Tipe} , {now2}");
-            Console.WriteLine($"{name1.Tipe} , {now1}");
+            Console.WriteLine($"{name3.Tipe} , {now3.Type} .");
+            Console.WriteLine($"{name2.Tipe} , {now2.Type} .");
+            Console.WriteLine($"{name1.Tipe} , {now1.Type}  .");
         }
     }
 }
